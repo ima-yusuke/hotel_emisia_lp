@@ -146,5 +146,33 @@
     {{--パンフレット&お問い合わせ--}}
     <x-index-contact></x-index-contact>
 
+    {{--画面右下のお問い合わせ--}}
+    <div class="floating-element bg-contact-green text-white rounded-full w-[100px] h-[100px] md:w-[150px] md:h-[150px] flex items-center justify-center" id="floating-element">
+        <a href="tel:0118958800" class="text-center text-sm md:text-base">お問合わせは<br>こちら</a>
+    </div>
+    <script>
+        // 画面右下にお問い合わせ表示（お問い合わせセクション時は非表示）
+        document.addEventListener("DOMContentLoaded", function() {
+            const triggerSection = document.getElementsByClassName('brochure-contact');
+            const floatingElement = document.getElementById('floating-element');
+
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (!entry.isIntersecting) {
+                        // パンフレット&お問い合わせセクションを通り過ぎたら表示
+                        floatingElement.classList.add('show');
+                    } else {
+                        // セクションに戻ったら非表示
+                        floatingElement.classList.remove('show');
+                    }
+                });
+            });
+
+            // ページ上部のお問い合わせセクションを監視
+            observer.observe(triggerSection[0]);
+            // ページ下部のお問い合わせセクションを監視
+            observer.observe(triggerSection[1]);
+        });
+    </script>
 </x-template>
 

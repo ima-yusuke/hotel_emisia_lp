@@ -29,6 +29,21 @@
     border-radius: 0.5rem;
 }
 
+/*画面右下のお問い合わせ*/
+.floating-element {
+     position: fixed;
+     bottom: -100px; /* 初期位置: 画面外 */
+     right: 20px;
+     opacity: 0;
+     transition: opacity 0.5s ease, bottom 0.5s ease;
+    z-index: 1000;
+ }
+
+.floating-element.show {
+    bottom: 20px; /* 固定表示 */
+    opacity: 1;
+}
+
 
 
 

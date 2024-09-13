@@ -1,5 +1,5 @@
 {{--パンフレット&お問い合わせ--}}
-<section class="w-full flex flex-col items-center gap-6 md:gap-16 py-4 md:py-10 bg-white">
+<section class="brochure-contact w-full flex flex-col items-center gap-6 md:gap-16 py-4 md:py-10 bg-white">
     <article class="flex flex-col items-center gap-6">
         <div class="flex flex-col items-center gap-4">
             <h2 class="md:text-2xl font-bold text-gray-800">お問合せ</h2>
