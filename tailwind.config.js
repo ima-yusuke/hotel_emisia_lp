@@ -16,7 +16,9 @@ export default {
             },
             colors: {
                 "main-color":"rgb(124,25,38)",
-                "main-text-color":"rgb(220,38,38)"
+                "main-text-color":"rgb(220,38,38)",
+                "contact-green":"#094",
+                "download-red":"#e94919",
             }
         },
     },

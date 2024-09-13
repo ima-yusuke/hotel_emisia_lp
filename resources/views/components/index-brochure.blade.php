@@ -1,4 +1,8 @@
-<aside class="flex flex-col items-center gap-1">
-    <h3>{{$title}}</h3>
-    <a download="{{$link}}" class="bg-green-700 text-white px-8 py-2 cursor-pointer">ダウンロード</a>
-</aside>
+<a download="{{$link}}" class="brochure bg-download-red text-white relative shadow-xl flex items-center px-6 py-4">
+    <p class="absolute left-1/2 -top-4 transform -translate-x-1/2 bg-white text-download-red border-2 border-solid border-download-red w-[80%] rounded-md">{{$title}}</p>
+    <aside class="flex items-center gap-2">
+        <i class="far fa-file-alt text-xl"></i>
+        <p class="text-white">ダウンロード</p>
+        <i class="fa-solid fa-angle-up rotate-90 text-xl"></i>
+    </aside>
+</a>
