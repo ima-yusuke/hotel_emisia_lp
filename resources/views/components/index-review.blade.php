@@ -1,4 +1,4 @@
-<article class="flex flex-col md:flex-row justify-center items-center bg-white gap-10 w-[90%] md:w-[70%] p-8 border border-solid border-main-color outline outline-4 outline-main-color rounded-lg">
+<article class="flex flex-col md:flex-row justify-center items-center bg-white gap-10 w-[90%] md:w-[70%] p-8 outline outline-[6px] outline-main-color rounded-lg">
     @if($flag=="true")
         <img src="{{asset($src)}}" class="w-[12rem] h-[12rem] object-cover aspect-square rounded-full border-4 border-solid border-main-color">
     @endif
