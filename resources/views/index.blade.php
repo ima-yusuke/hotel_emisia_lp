@@ -147,9 +147,9 @@
     <x-index-contact></x-index-contact>
 
     {{--画面右下のお問い合わせ--}}
-    <div class="floating-element bg-contact-green text-white rounded-full w-[100px] h-[100px] md:w-[150px] md:h-[150px] flex items-center justify-center" id="floating-element">
-        <a href="tel:0118958800" class="text-center text-sm md:text-base">お問合わせは<br>こちら</a>
-    </div>
+    <a href="tel:0118958800" class="text-center text-sm md:text-base floating-element bg-contact-green text-white rounded-full w-[100px] h-[100px] md:w-[150px] md:h-[150px] flex items-center justify-center" id="floating-element">
+        お問合わせは<br>こちら
+    </a>
     <script>
         // 画面右下にお問い合わせ表示（お問い合わせセクション時は非表示）
         document.addEventListener("DOMContentLoaded", function() {
